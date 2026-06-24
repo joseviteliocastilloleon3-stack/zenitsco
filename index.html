@@ -585,7 +585,7 @@ function pedirWA() {
   pedidos.unshift(pedido);
   localStorage.setItem('zk_pedidos', JSON.stringify(pedidos));
   // Enviar a Google Sheets — ERP lo lee al instante
-  var url = 'https://script.google.com/macros/s/AKfycbx3SRfa3Mryc4DDsvKdW3NZRUcUk9P73oTjgULyq4-mxqNote4yeuGp9v7pSR-Yma8n/exec?id='+encodeURIComponent(id)
+  var url = 'https://script.google.com/macros/s/AKfycbyuLudU9Fj9Sj1jpxEQ-KuZ9b7PaWijHlYJtMdkCC-gUIlwEUZfQcoYf24bHvNoM--b/exec?id='+encodeURIComponent(id)
     +'&fecha='+encodeURIComponent(fecha)
     +'&items='+encodeURIComponent(itemsStr)
     +'&subtotal='+base.toFixed(2)
